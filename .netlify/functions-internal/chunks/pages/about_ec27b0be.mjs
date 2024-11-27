@@ -277,7 +277,7 @@ const $$MainLayout = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$MainLayout;
   const { title } = Astro2.props;
   return renderTemplate`<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Interior Design Website Template"><meta${addAttribute(title, "title")}><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><title>${title}</title>${renderHead()}</head><body><main class="bg-main bg-no-repeat bg-cover bg-center">${renderComponent($$result, "Navbar", Navbar, { "client:load": true, "client:component-hydration": "load", "client:component-path": "C:/Users/USER-PC/Desktop/interior-design-website/src/components/navbar.tsx", "client:component-export": "default" })}${renderSlot($$result, $$slots["default"])}<!-- All different pages to be rendered here -->${renderComponent($$result, "Footer", Footer, {})}</main><p class="tracking-tight text-base text-center border border-gray-300 bg-white py-10 lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-Copyright © Interno | Designed by Onwudebelu Prisca Ebubechukwu
+Copyright © Abumatics | Designed by Abdul Majeed
 </p></body></html>`;
 }, "C:/Users/USER-PC/Desktop/interior-design-website/src/layouts/main-layout.astro", void 0);
 
