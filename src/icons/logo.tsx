@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return (
-   <>
-   <img src="./abu-interiors.png" alt="" />
-   </>
+    <div>
+      <img src="/abu-interiors.png" alt="Abu Interiors Logo" />
+    </div>
   );
 };
 
