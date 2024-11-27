@@ -1,11 +1,9 @@
 import React from "react";
-import ourLogo from "./abu-interiors.svg";
+import { ReactComponent as OurLogo } from "./abu-interiors.svg";
 
 const Logo = () => {
   return (
-    <>
-      <img src={ourLogo} alt="Abu Interiors Logo" />
-    </>
+    <OurLogo />
   );
 };
 
