@@ -46,22 +46,22 @@ const reviews = [
 
 const projects = [
   {
-    img: "/project1.png",
+    img: "/kitchen.jpeg",
     name: "Modern Kitchen",
     text: "Decor / Artchitecture",
   },
   {
-    img: "/project2.png",
+    img: "/bedroom.jpeg",
     name: "Modern Bedroom",
     text: "Decor / Artchitecture",
   },
   {
-    img: "/project3.png",
+    img: "/dining.jpeg",
     name: "Modern Dining Hall",
     text: "Decor / Artchitecture",
   },
   {
-    img: "/project4.png",
+    img: "/livingspace.jpeg",
     name: "Modern Living Room",
     text: "Decor / Artchitecture",
   },
@@ -278,7 +278,11 @@ const experiences = [
         projects.map((proj) => {
           return (
             <div class="w-full flex flex-col gap-4">
-              <img src={proj.img} alt="" />
+              <img
+                src={proj.img}
+                alt=""
+                class="rounded-lg shadow-lg transition-transform transform hover:scale-105 object-cover h-[300px] w-full"
+              />
               <p class="flex flex-col tracking-tight leading-9">
                 <span class="text-primary-200 text-lg lg:text-[25px] font-dm">
                   {proj.name}
