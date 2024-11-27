@@ -7,5 +7,18 @@ import netlify from "@astrojs/netlify/functions"; // Netlify adapter
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: "server",
-  adapter: netlify(), // Use the Netlify adapter
+  adapter: netlify(),
+  vite: {
+    plugins: [
+      {
+        name: "vite-plugin-svgr",
+        transform: (code, id) => {
+          if (id.endsWith(".svg")) {
+            return require("@svgr/webpack").loader(id);
+          }
+          return code;
+        },
+      },
+    ],
+  },
 });
