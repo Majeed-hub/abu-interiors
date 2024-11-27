@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
         alt="Abu Interiors Logo"
         className="h-16 w-16 object-contain" // Tailwind classes for styling image
       />
-      <h2 className="text-2xl font-norwester text-blue-600">Abu Interiors</h2> {/* Tailwind classes for text */}
+      <h2 className="text-2xl text-[#332F59] bold font-norwester">Abu Interiors</h2> {/* Tailwind classes for text */}
     </div>
   );
 };
