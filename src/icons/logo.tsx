@@ -1,12 +1,11 @@
 import React from "react";
 
-
 const Logo = () => {
   return (
-    <>
-      <img src="./abu-interiors.svg" alt="Abu Interiors Logo" />
-    </>
-  );  
+   <>
+   <img src="./abu-interiors.png" alt="" />
+   </>
+  );
 };
 
 export default Logo;
